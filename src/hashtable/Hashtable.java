@@ -78,8 +78,8 @@ public class Hashtable {
 
     public ArrayList allKeys() {
         ArrayList<String> allKeys = new ArrayList<>();
-        for(int index = 0; index< dataMap.length; index++) {
-            Node temp = dataMap[index];
+        for (Node node : dataMap) {
+            Node temp = node;
             while (!Objects.equals(temp, null)) {
                 allKeys.add(temp.key);
                 temp = temp.next;
